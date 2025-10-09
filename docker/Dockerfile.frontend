@@ -1,0 +1,28 @@
+FROM oven/bun:1
+
+WORKDIR /user/src/app
+
+ARG DATABASE_URL
+
+COPY ./packages ./packages
+COPY ./bun/lock ./bun/lock
+
+COPY ./package.json ./package.json
+COPY ./turbo.json ./turbo.json
+
+COPY ./apps/frontend ./apps/frontend
+
+
+
+# COPY . .
+
+RUN npm install
+RUN bun run db:migrate
+RUN DATABASE_URL=${DATABASE_URL} bun run build
+
+EXPOSE 3000
+
+
+CMD [ "bun","run","start:web" ]
+
+
