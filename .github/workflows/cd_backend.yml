@@ -1,12 +1,17 @@
-## build the docker image 
+## build the docker image
 ## push the docker imagekto the docker hub
-## ssh into our vms machine and start a new image 
+## ssh into our vms machine and start a new image
 
+name: Deploy the backend
 
-name: Deploy the backend 
 on:
-    push:
-        branches: [ main ]
+  push:
+    branches: [main]
+
 jobs:
-    build:
-        runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3
