@@ -18,7 +18,7 @@ This Turborepo includes the following packages/apps:
 
 - `docs`: a [Next.js](https://nextjs.org/) app
 
-![Architecture Diagram](https://lh3.googleusercontent.com/gg-dl/ABS2GSmN7WAiOk6PpJbUjYinA25ITPxWStPNFDBmwKFsLQzOcjQnimcV2Dv8DTWQMkNbaxyQs-3XGCoB1_woQIQTNPGAQLlj1lqlokdogFcKvOrIXfmEbcOc1i7jsjN0Lyk5XX4ymRoC4spW2O5LSCwXFwMhDm0w-xDr2ITA3-AnQBTaqZ34DQ=s1024-rj)
+![Architecture Diagram](Architecture.png)
 <div align="center"><b>Architecture by Shrawan</b></div>
 
 # monorepo-vms-deploy — DevOps README
